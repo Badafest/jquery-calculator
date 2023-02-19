@@ -40,7 +40,7 @@ $(document).ready(function () {
   newElement("button")
     .text("Clear All")
     .addClass("clrBtn")
-    .click(onClearPress)
+    .click(onClearAllPress)
     .appendTo(clrButtons);
 
   $(this).keydown(function (event) {
@@ -75,7 +75,7 @@ const onCharPress = (character) => {
 };
 
 const onClearAllPress = () => {
-  ["expr", "result"].forEach((x) => $(`#${x}`).text(""));
+  $("#expr, #result").text("");
 };
 
 const onClearPress = () => {
