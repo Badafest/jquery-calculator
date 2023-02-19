@@ -1,0 +1,61 @@
+#root {
+  width: 256px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+#screen {
+  border: 1px solid gray;
+  padding: 12px 24px;
+  border-radius: 6px;
+  overflow-x: auto;
+  font-size: large;
+  height: 56px;
+}
+
+#result {
+  margin-top: 2px;
+  text-align: right;
+}
+
+.numBtn,
+#eqBtn,
+.clrBtn {
+  background: none;
+  border: 1px solid gray;
+  border-radius: 6px;
+  padding: 16px;
+  cursor: pointer;
+}
+
+.buttons {
+  display: grid;
+  flex-grow: 1;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+}
+
+.clrBtn {
+  flex-grow: 1;
+}
+
+.clrBtns {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px;
+  gap: 6px;
+}
+
+.opBtns {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+#btnContainer {
+  display: flex;
+  justify-content: stretch;
+  padding: 6px;
+  gap: 6px;
+}
